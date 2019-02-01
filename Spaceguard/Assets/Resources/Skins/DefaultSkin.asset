@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025150ff549f84dd6a4fe9812e0e93c7, type: 3}
+  m_Name: DefaultSkin
+  m_EditorClassIdentifier: 
+  buttonSprite: {fileID: 21300000, guid: 2b77eef09e45942d7a5b9b475cdae87d, type: 3}
+  buttonSpriteState:
+    m_HighlightedSprite: {fileID: 21300000, guid: eb2c0c5b361384233b8f9cc200ff7c13,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 69d9666994532489d81a6c18dd5ed12a, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: a7424a5dd3b904cc88201ac1d26b49f9, type: 3}
+  defaultIconColor: {r: 1, g: 1, b: 1, a: 0.8509804}
+  iconBackgroundColor: {r: 1, g: 1, b: 1, a: 0.14901961}
+  multimediaButtonColor: {r: 1, g: 1, b: 1, a: 0.14901961}
+  playIcon: {fileID: 21300000, guid: 457c349527ced42dbbfb6dce6717d1c0, type: 3}
+  playBackwardIcon: {fileID: 21300000, guid: 1e795e2060e8e4150bf6ae475f295406, type: 3}
+  pauseIcon: {fileID: 21300000, guid: 4a6b080c43fa7497c90bbc1550627f27, type: 3}
+  stopIcon: {fileID: 21300000, guid: f46d34d2e0500472b8ffc79de2cd62eb, type: 3}
+  fastForwardIcon: {fileID: 21300000, guid: 270ad67226e12436fb618672c0c3f914, type: 3}
+  rewindIcon: {fileID: 21300000, guid: 2b1ab06a4184f421aaf5817efde16eed, type: 3}
+  skipIcon: {fileID: 21300000, guid: 066f18701cf604e4bb708206a45f3a38, type: 3}
+  skipBackIcon: {fileID: 21300000, guid: 90545234b4092476282643eeebe81639, type: 3}
+  menuButtonColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  menuIcon: {fileID: 21300000, guid: fd32f2110556a411fadb74bdd1390fd3, type: 3}
+  toggleLeftIcon: {fileID: 21300000, guid: c7dbee0fb9abd40b7ae047bc3c31a5bb, type: 3}
+  toggleRightIcon: {fileID: 21300000, guid: ab073fa65cbb94f7495ef3fd2c2912a8, type: 3}
+  plusIcon: {fileID: 21300000, guid: 49e55eea0856240c9b613e1f32337534, type: 3}
+  minusIcon: {fileID: 21300000, guid: b5101fec1d979414092cf8479f474514, type: 3}
+  replayIcon: {fileID: 21300000, guid: 1b2df16e8d6f4429786e0e2b8015861b, type: 3}
+  settingsIcon: {fileID: 21300000, guid: c110fbaa0d2704e5593592af32b06dc0, type: 3}
+  closeButtonColor: {r: 0.9882353, g: 0.49019608, b: 0.5058824, a: 1}
+  closeIcon: {fileID: 21300000, guid: 42a18fdefafb74b249b0ccbabcb9c798, type: 3}
+  confirmButtonColor: {r: 0.654902, g: 0.85490197, b: 0.4509804, a: 1}
+  confirmIcon: {fileID: 21300000, guid: bcb485df7838b4c1eb37b45fae976529, type: 3}
+  fullscreenButtonColor: {r: 0.69411767, g: 0.78431374, b: 0.8156863, a: 1}
+  fullscreenEnterIcon: {fileID: 21300000, guid: d0d4520a17ce64488aee472df14a7863,
+    type: 3}
+  fullscreenExitIcon: {fileID: 21300000, guid: e8d8adf6375024c2686cfa176e3fb779, type: 3}
+  launchButtonColor: {r: 1, g: 1, b: 0.4, a: 1}
+  launchIcon: {fileID: 21300000, guid: 14f06393af1384ec7b4725e92c36ec0b, type: 3}

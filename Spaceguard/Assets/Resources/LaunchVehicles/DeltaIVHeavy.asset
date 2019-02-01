@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79db08bf7d58b48b488cbfbcb90d9482, type: 3}
+  m_Name: DeltaIVHeavy
+  m_EditorClassIdentifier: 
+  a: 18997.2550244504
+  b: -90.7381736882272
+  c: 107.427243652611
+  curveFittingMaxC3: 100
+  useLinearInterpolation: 0
+  x0_C3: 0
+  y0Mass: 0
+  x1_C3: 0
+  y1Mass: 0
+  linearInterpMaxC3: 0

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79db08bf7d58b48b488cbfbcb90d9482, type: 3}
+  m_Name: SLS2B
+  m_EditorClassIdentifier: 
+  a: 157952.023584938
+  b: -173.173842129631
+  c: 159.631771636071
+  curveFittingMaxC3: 100
+  useLinearInterpolation: 1
+  x0_C3: 100
+  y0Mass: 8717.9487179
+  x1_C3: 150
+  y1Mass: 1282.0512821
+  linearInterpMaxC3: 154
