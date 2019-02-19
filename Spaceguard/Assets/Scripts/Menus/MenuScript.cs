@@ -7,7 +7,7 @@ namespace Game.Menus.Unused
     {
 
         //Menu States
-        public enum MenuStates { mainM, optionsM, scenarioS, spaceS, endS, missionS, buildS };
+        public enum MenuStates { mainM, optionsM, scenarioS, spaceS, endS, missionS, buildS, alertsM, inventoryM, simulationM };
 
         public MenuStates currentstate;
         public MenuStates previousstate;
@@ -21,6 +21,9 @@ namespace Game.Menus.Unused
         public GameObject endScreen;
         public GameObject missionScreen;
         public GameObject buildScreen;
+        public GameObject alertsMenu;
+        public GameObject inventoryMenu;
+        public GameObject simulationMenu;
 
         GameObject cameraObj; //for accessing the script on the main camera *temp
         CameraShaker cameraShake; //for accessing the cameraShake boolean on the main camera script *temp
@@ -38,6 +41,9 @@ namespace Game.Menus.Unused
             endScreen.SetActive(false);
             missionScreen.SetActive(false);
             buildScreen.SetActive(false);
+            alertsMenu.SetActive(false);
+            inventoryMenu.SetActive(false);
+            simulationMenu.SetActive(false);
             previousstate = currentstate;
         }
 
@@ -52,6 +58,9 @@ namespace Game.Menus.Unused
             endScreen.SetActive(false);
             missionScreen.SetActive(false);
             buildScreen.SetActive(false);
+            alertsMenu.SetActive(false);
+            inventoryMenu.SetActive(false);
+            simulationMenu.SetActive(false);
             previousstate = currentstate;
         }
 
@@ -69,6 +78,9 @@ namespace Game.Menus.Unused
                     endScreen.SetActive(false);
                     missionScreen.SetActive(false);
                     buildScreen.SetActive(false);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(false);
                     break;
 
                 case MenuStates.optionsM:
@@ -80,6 +92,9 @@ namespace Game.Menus.Unused
                     endScreen.SetActive(false);
                     missionScreen.SetActive(false);
                     buildScreen.SetActive(false);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(false);
                     break;
 
                 case MenuStates.scenarioS:
@@ -90,6 +105,9 @@ namespace Game.Menus.Unused
                     endScreen.SetActive(false);
                     missionScreen.SetActive(false);
                     buildScreen.SetActive(false);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(false);
                     break;
 
                 case MenuStates.spaceS:
@@ -100,6 +118,9 @@ namespace Game.Menus.Unused
                     endScreen.SetActive(false);
                     missionScreen.SetActive(false);
                     buildScreen.SetActive(false);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(false);
                     break;
 
                 case MenuStates.endS:
@@ -110,6 +131,9 @@ namespace Game.Menus.Unused
                     endScreen.SetActive(true);
                     missionScreen.SetActive(false);
                     buildScreen.SetActive(false);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(false);
                     break;
 
                 case MenuStates.missionS:
@@ -120,6 +144,9 @@ namespace Game.Menus.Unused
                     endScreen.SetActive(false);
                     missionScreen.SetActive(true);
                     buildScreen.SetActive(false);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(false);
                     break;
 
                 case MenuStates.buildS:
@@ -130,6 +157,48 @@ namespace Game.Menus.Unused
                     endScreen.SetActive(false);
                     missionScreen.SetActive(false);
                     buildScreen.SetActive(true);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(false);
+                    break;
+
+                case MenuStates.alertsM:
+                    mainMenu.SetActive(false);
+                    optionsMenu.SetActive(false);
+                    scenarioScreen.SetActive(false);
+                    spaceScreen.SetActive(false);
+                    endScreen.SetActive(false);
+                    missionScreen.SetActive(false);
+                    buildScreen.SetActive(false);
+                    alertsMenu.SetActive(true);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(false);
+                    break;
+
+                case MenuStates.inventoryM:
+                    mainMenu.SetActive(false);
+                    optionsMenu.SetActive(false);
+                    scenarioScreen.SetActive(false);
+                    spaceScreen.SetActive(false);
+                    endScreen.SetActive(false);
+                    missionScreen.SetActive(false);
+                    buildScreen.SetActive(false);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(true);
+                    simulationMenu.SetActive(false);
+                    break;
+
+                case MenuStates.simulationM:
+                    mainMenu.SetActive(false);
+                    optionsMenu.SetActive(false);
+                    scenarioScreen.SetActive(false);
+                    spaceScreen.SetActive(false);
+                    endScreen.SetActive(false);
+                    missionScreen.SetActive(false);
+                    buildScreen.SetActive(false);
+                    alertsMenu.SetActive(false);
+                    inventoryMenu.SetActive(false);
+                    simulationMenu.SetActive(true);
                     break;
             }
         }

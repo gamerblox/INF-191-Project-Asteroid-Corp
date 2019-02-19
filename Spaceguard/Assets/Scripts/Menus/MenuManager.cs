@@ -176,6 +176,24 @@ namespace Game.Menus
             SetActiveMenu(MenuState.Achievements);
         }
 
+        public void SimulationMenu()
+        {
+            //Debug.Log("Loading Achievements");
+            SetActiveMenu(MenuState.SimulationMenu);
+        }
+
+        public void AlertsMenu()
+        {
+            //Debug.Log("Loading Achievements");
+            SetActiveMenu(MenuState.AlertsMenu);
+        }
+
+        public void InventoryMenu()
+        {
+            //Debug.Log("Loading Achievements");
+            SetActiveMenu(MenuState.InventoryMenu);
+        }
+
         public void OnFullscreenEnter()
         {
             // 

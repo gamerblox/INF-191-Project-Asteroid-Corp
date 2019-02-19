@@ -114,6 +114,7 @@ namespace Game.Audio
         {
             for (int i = 0; i < sound.Length; i++)
             {
+                print(sound[i]);
                 GameObject _go = new GameObject("Sound_" + i + "_" + sound[i].clipName);
                 _go.transform.SetParent(this.transform);
                 sound[i].SetSource(_go.AddComponent<AudioSource>());
@@ -205,27 +206,32 @@ namespace Game.Audio
         public void PlayTheme3()
         { PlayThemeMusic("Extract of Sweetness"); }
 
+        public void PlayTheme4()
+        { PlayThemeMusic("Ether Oar"); }
+
 
         /// <summary>
         /// Randomly selects one of the three game themes and plays it.
         /// </summary>
         public void RandomThemeMusic()
         {
+
+            PlayTheme4();
             //Themes downloaded from freesound.org
-            switch (UnityEngine.Random.Range(0, 2))
-            {
-                case 0:
-                    PlayTheme1();
-                    break;
+            //switch (UnityEngine.Random.Range(0, 2))
+            //{
+            //    case 0:
+            //        PlayTheme1();
+            //        break;
+            
+            //    case 1:
+            //        PlayTheme2();
+            //        break;
 
-                case 1:
-                    PlayTheme2();
-                    break;
-
-                case 2:
-                    PlayTheme3();
-                    break;
-            }
+            //    case 2:
+            //        PlayTheme3();
+            //        break;
+            //}
         }
 
         //https://freesound.org/people/Splatez07/sounds/413690/

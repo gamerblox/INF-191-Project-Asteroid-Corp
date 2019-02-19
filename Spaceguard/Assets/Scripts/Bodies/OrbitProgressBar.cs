@@ -34,11 +34,11 @@ namespace Game.UI
 
         void Update()
         {
-            float percent = bodyManager.GetCurrentProgressPercent();
-            if (percent >= 0.0f && percent <= 1.0f)
-            {
-                progressBar.fillAmount = percent;
-            }
+            //float percent = bodyManager.GetCurrentProgressPercent();
+            //if (percent >= 0.0f && percent <= 1.0f)
+            //{
+            //    progressBar.fillAmount = percent;
+            //}
             UpdateProgressText();
         }
 
@@ -75,9 +75,9 @@ namespace Game.UI
 
         void UpdateProgressText()
         {
-            epochText.text = Orbits.OrbitUtils.JDN2DateTime(bodyManager.CurrentEpoch).ToShortDateString();
-            int daysToImpact = (int)System.Math.Round(bodyManager.ImpactEpoch - bodyManager.CurrentEpoch);
-            countdownText.text = daysToImpact.ToString();
+            //epochText.text = Orbits.OrbitUtils.JDN2DateTime(bodyManager.CurrentEpoch).ToShortDateString();
+            //int daysToImpact = (int)System.Math.Round(bodyManager.ImpactEpoch - bodyManager.CurrentEpoch);
+            //countdownText.text = daysToImpact.ToString();
         }
 
         bool DoubleClick(float t)

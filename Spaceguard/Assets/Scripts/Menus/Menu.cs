@@ -18,6 +18,9 @@ namespace Game.Menus
         BuildScreen,
         Highscores,
         Achievements,
+        SimulationMenu,
+        InventoryMenu,
+        AlertsMenu,
         WebEndScreen
     }
 
