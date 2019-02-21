@@ -124,7 +124,10 @@ namespace Game.Bodies
         /// </remarks>
         public void UpdateTransformPosition()
         {
-            transform.position = (Vector3)(Orbit.Position * OrbitUtils.KM2AU);
+            if (true)
+            {
+                transform.position = (Vector3)(Orbit.Position * OrbitUtils.KM2AU);
+            }
         }
 
         public void UpdateTransformPositionClear()
