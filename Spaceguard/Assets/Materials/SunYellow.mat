@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SunYellow
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 3f387b3c7760d5a488b5596b42425701, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,6 +39,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: ae7853f372401452eb534e1f4954c9d1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MKGlowTex:
+        m_Texture: {fileID: 2800000, guid: c3c34e396a46f4439925b24e67779a5d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: ae7853f372401452eb534e1f4954c9d1, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -63,6 +67,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _MKGlowPower: 0.83
+    - _MKGlowTexStrength: 0.85
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -73,5 +79,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.8773585, g: 0.5900378, b: 0.16967781, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MKGlowColor: {r: 0.820484, g: 0.8962264, b: 0.71444464, a: 1}
+    - _MKGlowTexColor: {r: 0.98039216, g: 0.107362136, b: 0, a: 1}
