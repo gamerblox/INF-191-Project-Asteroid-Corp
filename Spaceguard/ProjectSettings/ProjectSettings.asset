@@ -733,10 +733,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 2
-  cloudProjectId: 2252cb64-fbe9-4560-80d9-e3f2ba71d2ea
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
-  projectName: Spaceguard
-  organizationId: asteroiddefense
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
