@@ -259,17 +259,26 @@ namespace Game.Orbits
                 case "pdc17a":
                     if (km_sec)
                     {
-
-                        //in km-s
                         epoch = 2462239.406944; //date of impact in julian calendar
                         mu = 1.3271244004193930E+11; // in km^3/s^2
-                        nu = 180.297018205 * OrbitUtils.Deg2Rad; //the number i get is -179.7029817948 but i put it in positive degrees
+                        nu = -179.7029817948 * OrbitUtils.Deg2Rad; //the number i get is -179.7029817948 but i put it in positive degrees
                         a = 1.3799480581751686E+8; //in km. in au = .9224383019077086
                         ecc = .1911953048308701;
                         i = 3.331369520013644 * OrbitUtils.Deg2Rad; //put in rad
                         Om = 204.4460289189818 * OrbitUtils.Deg2Rad; //put in rad
                         w = 126.401879524849 * OrbitUtils.Deg2Rad; //put in rad
                         M = 180.4293730454418 * OrbitUtils.Deg2Rad; //put in rad
+                                                                    //period = 323.596949048484; //in days. in year it is: .88596
+                        //in km-s
+                        //epoch = 2462239.406944; //date of impact in julian calendar
+                        //mu = 1.3271244004193930E+11; // in km^3/s^2
+                        //nu = 180.297018205 * OrbitUtils.Deg2Rad; //the number i get is -179.7029817948 but i put it in positive degrees
+                        //a = 1.3799480581751686E+8; //in km. in au = .9224383019077086
+                        //ecc = .1911953048308701;
+                        //i = 3.331369520013644 * OrbitUtils.Deg2Rad; //put in rad
+                        //Om = 204.4460289189818 * OrbitUtils.Deg2Rad; //put in rad
+                        //w = 126.401879524849 * OrbitUtils.Deg2Rad; //put in rad
+                        //M = 180.4293730454418 * OrbitUtils.Deg2Rad; //put in rad
                                                                     //period = 323.596949048484; //in days. in year it is: .88596
 
                         //mu = 1.3271244004193930E+11;
