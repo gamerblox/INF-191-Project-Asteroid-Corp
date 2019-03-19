@@ -4,6 +4,7 @@ using Game.IO;
 using Game.Orbits;
 using UnityEngine;
 using UnityEngine.UI;
+using Game.Menus;
 
 namespace Game.Bodies
 {
@@ -12,6 +13,8 @@ namespace Game.Bodies
     {
         const double MaxStepSize = 16.0;
         const double MinStepSize = 0.0625;
+
+	    public GameObject manager;
 
         [Header("Simulation Settings")]
         public double Speed = 20;
@@ -614,6 +617,7 @@ namespace Game.Bodies
             // Earth-Asteroid Impact
             if (larger.tag == "Earth" && smaller.tag == "Asteroid")
             {
+		        manager.GetComponent<MenuManager>().LoadEndScreen();
                 StartCoroutine(FadeTextToFullAlpha(MessageText, 0f));
                 DistanceText.enabled = true;
                 ProcessCollisionStay(larger, smaller);
