@@ -158,7 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97dd582ab73f743b79d0d0b705983c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 30
+  manager: {fileID: 0}
+  Speed: 3
   WarningTime: 3652.5
   EpochText: {fileID: 0}
   StepSizeText: {fileID: 0}

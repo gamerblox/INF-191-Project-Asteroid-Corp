@@ -109,8 +109,26 @@ namespace Game.Menus
         /// </summary>
         public void LoadOptionsMenu()
         {
+            ////make current scene the previous one
+            //previous = current;
+            //Debug.Log(previous);
+
             //Debug.Log("Loading Options Menu");
             SetActiveMenu(MenuState.OptionsMenu);
+
+            //Debug.Log(current);
+            ////and then find gameobject of menustate
+            //foreach (Menu menu in FindObjectsOfType<Menu>())
+            //{
+            //    if (menu.State == MenuState.OptionsMenu)
+            //    {
+            //        current = menu.gameObject;
+            //        break;
+
+            //    }
+
+            //}
+
         }
 
         /// <summary>
