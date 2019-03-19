@@ -121,6 +121,8 @@ namespace Game.Audio
             }
 
             RandomThemeMusic();
+            //mute the song
+            SetMasterMute();
         }
 
         #endregion

@@ -11,9 +11,6 @@ public class ToolTipManager : MonoBehaviour {
     //reference to tooltip object
     public GameObject ToolTip;
     private GameObject _tooltip;
-	
-	public bool DebugEnable;
-	private bool timeActivate;
 
     void Start()
     {
@@ -29,24 +26,6 @@ public class ToolTipManager : MonoBehaviour {
 			UpdatePos();
 
         }
-		
-		if (DebugEnable)
-		{
-			//if debug is on space pauses time
-			if (Input.GetKeyDown(KeyCode.Space) && !timeActivate)
-			{
-				Time.timeScale = 0f;
-				timeActivate = true;
-				
-			}
-			else if (Input.GetKeyDown(KeyCode.Space))
-			{
-				Time.timeScale = 1f;
-				timeActivate = false;
-				
-			}
-			
-		}
 
     }
 
