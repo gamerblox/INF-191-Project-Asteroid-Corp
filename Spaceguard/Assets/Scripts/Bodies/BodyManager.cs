@@ -728,6 +728,7 @@ namespace Game.Bodies
         public void DisplayTextWithFadeEffect(Text text, string message, float displayTime = 8f, float fadeTime = 1f)
         {
             StartCoroutine(TextFadeEffect(text, message, displayTime, fadeTime));
+            Debug.Log(message);
         }
 
         IEnumerator TextFadeEffect(Text text, string message, float displayTime, float fadeTime = 1.0f)

@@ -148,23 +148,29 @@ namespace Game.Cameras
                         UnlockObject();
                     }
 
-                    float s0 = LinePlaneIntersect(transform.forward, transform.position, Vector3.up, Vector3.zero, ref cameraPlanePoint);
-                    targetRotation.position = transform.forward * s0 + transform.position;
-                    float lineToPlaneLength = LinePlaneIntersect(ray.direction, transform.position, Vector3.up, Vector3.zero, ref vectorPoint);
+                    //float s0 = LinePlaneIntersect(transform.forward, transform.position, Vector3.up, Vector3.zero, ref cameraPlanePoint);
+                    //targetRotation.position = transform.forward * s0 + transform.position;
+                    //float lineToPlaneLength = LinePlaneIntersect(ray.direction, transform.position, Vector3.up, Vector3.zero, ref vectorPoint);
 
                     if (wheel > 0)
                     {
-                        if (lineToPlaneLength > 1.1f)
-                        {
-                            desiredPosition = (vectorPoint - transform.position) / 2 + transform.position;
-                        }
+                        //if (lineToPlaneLength > 1.1f)
+                        //{
+                        //    desiredPosition = (vectorPoint - transform.position) / 2 + transform.position;
+                        //}
+                        //Debug.Log(lineToPlaneLength);
+                        desiredPosition = (vectorPoint - transform.position) / 2 + transform.position;
+
                     }
                     else if (wheel < 0)
                     {
-                        desiredPosition = -(targetRotation.position - transform.position) / 2 + transform.position;
+                        //desiredPosition = -(targetRotation.position - transform.position) / 2 + transform.position;
+                        //Debug.Log(lineToPlaneLength);
+                        desiredPosition = -(vectorPoint - transform.position) / 2 + transform.position;
+
                     }
 
-                    transform.position = Vector3.Lerp(transform.position, desiredPosition, zoomRate * Time.deltaTime / Time.timeScale);
+                    transform.position = Vector3.Lerp(transform.position, desiredPosition, zoomRate);// * Time.deltaTime / Time.timeScale);
 
                     if (transform.position == desiredPosition)
                     {
