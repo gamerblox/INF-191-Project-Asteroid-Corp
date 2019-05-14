@@ -259,16 +259,17 @@ namespace Game.Orbits
                 case "pdc17a":
                     if (km_sec)
                     {
-                        epoch = 2462239.406944; //date of impact in julian calendar
-                        mu = 1.3271244004193930E+11; // in km^3/s^2
-                        nu = -179.7029817948 * OrbitUtils.Deg2Rad; //the number i get is -179.7029817948 but i put it in positive degrees
-                        a = 1.3799480581751686E+8; //in km. in au = .9224383019077086
-                        ecc = .1911953048308701;
-                        i = 3.331369520013644 * OrbitUtils.Deg2Rad; //put in rad
-                        Om = 204.4460289189818 * OrbitUtils.Deg2Rad; //put in rad
-                        w = 126.401879524849 * OrbitUtils.Deg2Rad; //put in rad
-                        M = 180.4293730454418 * OrbitUtils.Deg2Rad; //put in rad
-                                                                    //period = 323.596949048484; //in days. in year it is: .88596
+                        //epoch = 2462239.406944; //date of impact in julian calendar
+                        //mu = 1.3271244004193930E+11; // in km^3/s^2
+                        //nu = -179.7029817948 * OrbitUtils.Deg2Rad; //the number i get is -179.7029817948 but i put it in positive degrees
+                        //a = 1.3799480581751686E+8; //in km. in au = .9224383019077086
+                        //ecc = .1911953048308701;
+                        //i = 3.331369520013644 * OrbitUtils.Deg2Rad; //put in rad
+                        //Om = 204.4460289189818 * OrbitUtils.Deg2Rad; //put in rad
+                        //w = 126.401879524849 * OrbitUtils.Deg2Rad; //put in rad
+                        //M = 180.4293730454418 * OrbitUtils.Deg2Rad; //put in rad
+                        //period = 323.596949048484; //in days. in year it is: .88596
+
                         //in km-s
                         //epoch = 2462239.406944; //date of impact in julian calendar
                         //mu = 1.3271244004193930E+11; // in km^3/s^2
@@ -279,20 +280,20 @@ namespace Game.Orbits
                         //Om = 204.4460289189818 * OrbitUtils.Deg2Rad; //put in rad
                         //w = 126.401879524849 * OrbitUtils.Deg2Rad; //put in rad
                         //M = 180.4293730454418 * OrbitUtils.Deg2Rad; //put in rad
-                                                                    //period = 323.596949048484; //in days. in year it is: .88596
+                        //period = 323.596949048484; //in days. in year it is: .88596
 
-                        //mu = 1.3271244004193930E+11;
-                        //epoch = 2460511.5; // 2024-Jul-20
-                        //ecc = 6.067308998464853E-01;
+                        mu = 1.3271244004193930E+11;
+                        epoch = 2460511.5; // 2024-Jul-20
+                        ecc = 6.067308998464853E-01;
                         //qr = 1.318222284687151E+08; // perihelion distance
-                        //i = 6.297860669424182E+00 * OrbitUtils.Deg2Rad;
-                        //Om = 2.980466946281459E+02 * OrbitUtils.Deg2Rad;
-                        //w = 3.116195745824791E+02 * OrbitUtils.Deg2Rad;
+                        i = 6.297860669424182E+00 * OrbitUtils.Deg2Rad;
+                        Om = 2.980466946281459E+02 * OrbitUtils.Deg2Rad;
+                        w = 3.116195745824791E+02 * OrbitUtils.Deg2Rad;
                         //Tp = 2.460345623238127E+06; // time of perihelion
-                        //N = 3.401184666189607E-06 * OrbitUtils.Deg2Rad; // mean motion
-                        //M = 4.874493591005381E+01 * OrbitUtils.Deg2Rad;
-                        //nu = 1.218024541247387E+02 * OrbitUtils.Deg2Rad;
-                        //a = 3.351959978987864E+08;
+                        N = 3.401184666189607E-06 * OrbitUtils.Deg2Rad; // mean motion
+                        M = 4.874493591005381E+01 * OrbitUtils.Deg2Rad;
+                        nu = 1.218024541247387E+02 * OrbitUtils.Deg2Rad;
+                        a = 3.351959978987864E+08;
                         //ad = 5.385697673288578E+08; // aphelion distance
                         //pr = 1.058454730725671E+08; // mean sidereel period
                     }
