@@ -181,7 +181,7 @@ namespace Game.Menus
         /// </summary>
         public void LoadHighscores()
         {
-            //Debug.Log("Loading Highscores");
+            Debug.Log("Loading Highscores");
             SetActiveMenu(MenuState.Highscores);
         }
 

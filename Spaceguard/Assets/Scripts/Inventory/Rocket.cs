@@ -2,16 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Alert : MonoBehaviour
+public class Rocket : MonoBehaviour
 {
-
-    public GameObject alertimage;
-    
-    public void RemoveAlert()
+    public void RemoveRocket()
     {
-
         Destroy(this.gameObject);
 
     }
-
 }

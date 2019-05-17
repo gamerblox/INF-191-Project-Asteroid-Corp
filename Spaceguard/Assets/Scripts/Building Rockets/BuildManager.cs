@@ -10,6 +10,7 @@ public class BuildManager : MonoBehaviour
     public Text timeText;
     public Text marscapText;
     public Text leocapText;
+    public InventoryManager inventory;
 
     //Rocket Info
     public List<RocketInfo> rocketList;
@@ -117,6 +118,8 @@ public class BuildManager : MonoBehaviour
 
     public void PurchaseRocket()
     {
+
+        inventory.AddRocket(selectRocket.rocketName);
         Debug.Log(selectRocket.rocketName);
 
     }
