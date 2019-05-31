@@ -12,4 +12,11 @@ public class AlertToggle : MonoBehaviour
 
     }
 
+    public void ActivateAlert()
+    {
+
+        this.gameObject.SetActive(true);
+
+    }
+
 }

@@ -15,6 +15,7 @@ namespace Game.Bodies
         const double MinStepSize = 0.0625;
 
 	    public GameObject manager;
+        public GameObject manager2;
 
         [Header("Simulation Settings")]
         public double Speed = 20;
@@ -773,6 +774,19 @@ namespace Game.Bodies
 
         void SetEpochText()
         {
+            print(OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString());
+            if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "11/5/2017")
+            {
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 11\nNovember 5, 2017");
+            }
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "6/5/2018")
+            {
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 12\nJune 5, 2018");
+            }
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "5/21/2019")
+            {
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 13\nMay 21, 2019");
+            }
             EpochText.text = OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString();
         }
 
