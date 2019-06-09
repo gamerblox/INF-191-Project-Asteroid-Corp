@@ -14,7 +14,21 @@ namespace Game.Bodies
         const double MaxStepSize = 16.0;
         const double MinStepSize = 0.0625;
 
-	    public GameObject manager;
+        public int alert1 = 0;
+        public int alert2 = 0;
+        public int alert3 = 0;
+        public int alert4 = 0;
+        public int alert5 = 0;
+        public int alert6 = 0;
+        public int alert7 = 0;
+        public int alert8 = 0;
+        public int alert9 = 0;
+        public int alert10 = 0;
+        public int alert11 = 0;
+        public int alert12 = 0;
+        public int alert13 = 0;
+
+        public GameObject manager;
         public GameObject manager2;
 
         [Header("Simulation Settings")]
@@ -774,18 +788,83 @@ namespace Game.Bodies
 
         void SetEpochText()
         {
-            print(OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString());
-            if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "11/5/2017")
+            // alert 1
+            if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "7/27/2017" && alert1 == 0)
             {
-                manager2.GetComponent<AlertsManager>().AddAlert("Alert 11\nNovember 5, 2017");
+                alert1 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 1\nJuly 27, 2017");
             }
-            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "6/5/2018")
+            // alert 2
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "12/4/2017" && alert2 == 0)
             {
-                manager2.GetComponent<AlertsManager>().AddAlert("Alert 12\nJune 5, 2018");
+                alert2 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 2\nDecember 4, 2017");
             }
-            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "5/21/2019")
+            // alert 3
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "4/17/2018" && alert3 == 0)
             {
-                manager2.GetComponent<AlertsManager>().AddAlert("Alert 13\nMay 21, 2019");
+                alert3 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 3\nApril 7, 2018");
+            }
+            // alert 4
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "11/29/2018" && alert4 == 0)
+            {
+                alert4 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 4\nNovember 29, 2018");
+            }
+            // alert 5
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "6/7/2019" && alert5 == 0)
+            {
+                alert5 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 5\nJune 7, 2019");
+            }
+            // alert 6
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "1/2/2020" && alert6 == 0)
+            {
+                alert6 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 6\nJanuary 2, 2020");
+            }
+            // alert 7
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "7/23/2020" && alert7 == 0)
+            {
+                alert7 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 7\nJuly 23, 2020");
+            }
+            // alert 8
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "3/14/2021" && alert8 == 0)
+            {
+                alert8 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 8\nMarch 14, 2021");
+            }
+            // alert 9
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "10/13/2022" && alert9 == 0)
+            {
+                alert9 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 9\nOctober 13, 2022");
+            }
+            // alert 10
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "5/9/2023" && alert10 == 0)
+            {
+                alert10 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 10\nMay 9, 2023");
+            }
+            // alert 11
+            else if ((OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "12/11/2024"|| OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "12/12/2024"|| OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "12/13/2024") && alert11 == 0)
+            {
+                alert11 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 11\nDecember 11, 2024");
+            }
+            // alert 12
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "2/16/2025" && alert12 == 0)
+            {
+                alert12 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 12\nFebruary 16, 2025");
+            }
+            // alert 13
+            else if (OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString() == "8/1/2026" && alert13 == 0)
+            {
+                alert13 = 1;
+                manager2.GetComponent<AlertsManager>().AddAlert("Alert 13\nAugust 1, 2026");
             }
             EpochText.text = OrbitUtils.JDN2DateTime(CurrentEpoch).ToShortDateString();
         }
