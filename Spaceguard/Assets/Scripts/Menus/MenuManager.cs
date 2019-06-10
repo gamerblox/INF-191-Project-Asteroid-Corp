@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Game.Cameras;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Game.Menus
 {
@@ -214,12 +215,13 @@ namespace Game.Menus
 
         public void OnFullscreenEnter()
         {
-            // 
+            print("hello");
+            SceneManager.LoadScene("SpaceGuard");
         }
 
         public void OnFullscreenExit()
         {
-            // 
+            print("pls work");
         }
 
         /// <summary>
